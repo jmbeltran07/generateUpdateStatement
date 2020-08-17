@@ -153,6 +153,15 @@ const extraTestingData =[
         'input': 4,
         'output': { "invalid mutation": true }
     },
+    {
+        'testName': 'more than one type of operation in the mutation',
+        'input': { "posts": [ {"_id": 2, "value": "too"}, {"value": "four"}, {"_id": 4, "_delete": true}, {"value": "five"}, ] },
+        'output': { 
+            "$update": {"posts.0.value": "too"},
+            "$add": {"posts": [{"value": "five"}] },
+            "$remove" : {"posts.2" : true}
+        }
+    },
 ]
 module.exports =
 {
