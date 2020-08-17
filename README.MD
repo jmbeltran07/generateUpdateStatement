@@ -77,7 +77,7 @@ and I assumed it should be:
 ```
 { "$remove" : {"posts.0" : true} } // notice true is boolean instead of string
 ```
-This was assumed in order to remain consisteng with the other examples
+This was assumed in order to remain consistent with the other examples
 
 **Output from second example for the update operation is wrong**
 Input says:
