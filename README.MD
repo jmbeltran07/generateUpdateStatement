@@ -6,6 +6,9 @@ In order to solve this problem the following files are used:
 * **index.js**: It contains a sample [express] server to test the function online via [POST] /generateUpdateStatement
 * **typeValidator.js**: It uses [tcomb] library to validate the input object
 * **tests/***: It contains the testing data (originalDocument, and testing mutations) as well as the test suite using [jest] library
+
+This solution is using a OOP approach, where we analyze the mutation input against the document structure that we are supposed to have, and decide what kind of output operation we are handling depending on the structure of our input.
+I am using nested if/else statements to determine the possible outputs in order to favor a valid input structure and reject as "invalid operation" wrong inputs
   
 ### Installation
 
