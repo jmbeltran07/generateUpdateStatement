@@ -2,10 +2,10 @@
 
 In order to solve this problem the following files are used:
 
-**generateUpdateStatement.js**: It contains generateUpdateStatement(document, mutation) function which returns an update statement object
-**index.js**: It contains a sample [express] server to test the function online via [POST] /generateUpdateStatement
-**typeValidator.js**: It uses [tcomb] library to validate the input object
-**tests/***: It contains the testing data (originalDocument, and testing mutations) as well as the test suite using [jest] library
+* **generateUpdateStatement.js**: It contains generateUpdateStatement(document, mutation) function which returns an update statement object
+* **index.js**: It contains a sample [express] server to test the function online via [POST] /generateUpdateStatement
+* **typeValidator.js**: It uses [tcomb] library to validate the input object
+* **tests/***: It contains the testing data (originalDocument, and testing mutations) as well as the test suite using [jest] library
   
 ### Installation
 
@@ -25,9 +25,10 @@ you can see the tests under
 ```
 tests/testingData.js
 ```
-in there you will see two objects:
+in there you will see three objects:
 * testingData: which contains the base tests mentioned on the assignment
 * extraTestingData: which contains extra texts used for Test driven design.
+* originalDocument: which contains the original document used for the tests
  
 to run the test suite just input the following command under root folder
 ```
